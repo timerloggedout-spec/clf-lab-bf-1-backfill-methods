@@ -1,0 +1,24 @@
+{
+  "family": "bf-1-backfill-methods",
+  "cell_id": "g0-nb-tfidf-word-augmented-0d0b9e",
+  "gen": 0,
+  "model": "nb",
+  "model_level": {
+    "alpha": 0.5
+  },
+  "features": "tfidf-word",
+  "features_level": {
+    "ngram_max": 2
+  },
+  "layer": "augmented",
+  "macro_f1": 0.3312,
+  "macro_f1_std": 0.0899,
+  "acc": 0.8075,
+  "gold_acc": 0.2727,
+  "n_rows": 400,
+  "data_sha": "efae96d136ae84c34289bce6757127dc741c3e30",
+  "commit": "0fca9e81bddb998fd0ec8ba032eeaf58a8885b53",
+  "node": "actions",
+  "promoted_ts": "2026-11-19T09:08:56Z",
+  "history": []
+}
