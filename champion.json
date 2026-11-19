@@ -1,24 +1,31 @@
 {
   "family": "bf-1-backfill-methods",
-  "cell_id": "g0-nb-tfidf-word-augmented-0d0b9e",
-  "gen": 0,
-  "model": "nb",
+  "cell_id": "g1-logreg-tfidf-word-raw-85e21f",
+  "gen": 1,
+  "model": "logreg",
   "model_level": {
-    "alpha": 0.5
+    "C": 1.0
   },
   "features": "tfidf-word",
   "features_level": {
-    "ngram_max": 2
+    "ngram_max": 1
   },
-  "layer": "augmented",
-  "macro_f1": 0.3312,
-  "macro_f1_std": 0.0899,
-  "acc": 0.8075,
-  "gold_acc": 0.2727,
+  "layer": "raw",
+  "macro_f1": 0.3956,
+  "macro_f1_std": 0.0914,
+  "acc": 0.8637,
+  "gold_acc": 0.1818,
   "n_rows": 400,
-  "data_sha": "efae96d136ae84c34289bce6757127dc741c3e30",
-  "commit": "0fca9e81bddb998fd0ec8ba032eeaf58a8885b53",
-  "node": "actions",
-  "promoted_ts": "2026-11-19T09:08:56Z",
-  "history": []
+  "data_sha": "a9b5f9b36b659b69b82b4686ee755607bb3d5372",
+  "commit": "360c18f04976777760566c62a73dfe37956fcb71",
+  "node": "hark-vm",
+  "promoted_ts": "2026-11-19T20:37:13Z",
+  "history": [
+    {
+      "cell_id": "g0-nb-tfidf-word-augmented-0d0b9e",
+      "gen": 0,
+      "macro_f1": 0.3312,
+      "promoted_ts": "2026-11-19T09:08:56Z"
+    }
+  ]
 }
