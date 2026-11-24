@@ -1,6 +1,6 @@
 schema: clf-lab-doe/v1
 family: bf-1-backfill-methods
-generation: 11
+generation: 12
 data_sha: null
 design: fractional-factorial
 design_note: '1/3 fraction: (feature_idx + layer_idx) mod 3 = model_idx mod 3'
@@ -121,35 +121,35 @@ cells:
   features: tfidf-word
   features_level:
     ngram_max: 1
-  layer: augmented
-  id: g11-logreg-tfidf-word-augmented-10a6ad
+  layer: dedup
+  id: g12-logreg-tfidf-word-dedup-a2300f
 - model: logreg
   model_level:
-    C: 243.0
-  features: tfidf-char
-  features_level:
-    ngram_max: 5
-  layer: augmented
-  id: g11-logreg-tfidf-char-augmented-ed66dd
-- model: logreg
-  model_level:
-    C: 243.0
-  features: hashing
-  features_level:
-    log2_features: 16
-  layer: augmented
-  id: g11-logreg-hashing-augmented-abf799
-- model: logreg
-  model_level:
-    C: 243.0
+    C: 729.0
   features: tfidf-word
   features_level:
     ngram_max: 2
   layer: augmented
-  id: g11-logreg-tfidf-word-augmented-ca4e2e
+  id: g12-logreg-tfidf-word-augmented-dc8390
+- model: logreg
+  model_level:
+    C: 729.0
+  features: hashing
+  features_level:
+    log2_features: 16
+  layer: augmented
+  id: g12-logreg-hashing-augmented-c77f0c
+- model: logreg
+  model_level:
+    C: 729.0
+  features: tfidf-char
+  features_level:
+    ngram_max: 5
+  layer: augmented
+  id: g12-logreg-tfidf-char-augmented-94e6a4
 parent_top:
-- g10-logreg-tfidf-word-augmented-535f53
-- g10-logreg-tfidf-word-augmented-535f53
-- g10-logreg-tfidf-word-augmented-535f53
+- g11-logreg-tfidf-word-augmented-10a6ad
+- g11-logreg-tfidf-word-augmented-10a6ad
+- g11-logreg-tfidf-word-augmented-10a6ad
 minted_levels: []
-generated_ts: '2026-11-24T09:55:03Z'
+generated_ts: '2026-11-24T22:26:56Z'
